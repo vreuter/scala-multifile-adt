@@ -88,11 +88,11 @@ sealed trait MyADT {
 final case class Foo(x: Int, y: Int) extends MyADT with FooImpl
 final case class Bar(a: String, b: String) extends MySimpleADT[String] with BarImpl
 
-trait FooImp {
+trait FooImpl {
   // Foo implementation.
 }
 
-trait BarImp {
+trait BarImpl {
   // Bar implementation.
 }
 ```
